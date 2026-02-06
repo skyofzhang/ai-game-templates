@@ -60,22 +60,22 @@
       "items": [
         {
           "id": "场景_森林",
-          "path": "场景/Scene_Forest.unitypackage",
+          "path": "场景/场景_森林/map.unitypackage",
           "type": "unitypackage",
           "source": "external_ai",
           "deliverable": "assets_only",
           "note": "美术AI产出unitypackage，含空场景+模型/贴图，程序导入后组装",
-          "status": "待制作",
+          "status": "已填充",
           "priority": "P1"
         },
         {
           "id": "场景_BOSS房",
-          "path": "场景/Scene_BossRoom.unitypackage",
+          "path": "场景/场景_BOSS房/map.unitypackage",
           "type": "unitypackage",
           "source": "external_ai",
           "deliverable": "assets_only",
           "note": "美术AI产出unitypackage，含空场景+模型/贴图，程序导入后组装",
-          "status": "待制作",
+          "status": "已填充",
           "priority": "P1"
         }
       ]
