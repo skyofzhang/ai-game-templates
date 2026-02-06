@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "description": "AI游戏美术资源库索引",
+  "updated_at": "2026-02-06",
+
+  "structure": {
+    "_common/": "公用资源（多项目复用）",
+    "projects/{project}/": "项目专用资源"
+  },
+
+  "naming_convention": {
+    "3d_model": "{类型}_{编号}/ (文件夹，含FBX+贴图+动画)",
+    "ui_sprite": "UI_{分类}_{名称}.png",
+    "vfx": "VFX_{效果名}/",
+    "audio": "{BGM|SFX}_{名称}.ogg"
+  },
+
+  "projects": {
+    "moshou": {
+      "name": "魔兽小游戏",
+      "status": "开发中",
+      "categories": ["角色", "怪物", "场景", "UI", "特效", "音效"]
+    }
+  },
+
+  "usage": {
+    "claude_pull": "Claude根据策划案，按名字模式匹配资源，复制到项目Assets/Resources/",
+    "human_submit": "人类使用其他工具生成资源，提交到对应项目目录"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "project": "moshou",
+  "name": "魔兽小游戏",
+  "version": "1.0",
+  "updated_at": "2026-02-06",
+  "updated_by": "Claude",
+
+  "resources": {
+    "角色": {
+      "count": 1,
+      "items": [
+        {"id": "主角_弓箭手", "path": "角色/主角_弓箭手/", "type": "3d_character", "status": "待制作", "priority": "P0"}
+      ]
+    },
+    "怪物": {
+      "count": 5,
+      "items": [
+        {"id": "怪物_01_史莱姆", "path": "怪物/怪物_01_史莱姆/", "type": "3d_monster", "status": "待制作", "priority": "P0"},
+        {"id": "怪物_02_哥布林", "path": "怪物/怪物_02_哥布林/", "type": "3d_monster", "status": "待制作", "priority": "P0"},
+        {"id": "怪物_03_狼", "path": "怪物/怪物_03_狼/", "type": "3d_monster", "status": "待制作", "priority": "P0"},
+        {"id": "怪物_04_精英哥布林", "path": "怪物/怪物_04_精英哥布林/", "type": "3d_monster", "status": "待制作", "priority": "P1"},
+        {"id": "BOSS_01_哥布林王", "path": "怪物/BOSS_01_哥布林王/", "type": "3d_boss", "status": "待制作", "priority": "P0"}
+      ]
+    },
+    "场景": {
+      "count": 2,
+      "items": [
+        {"id": "场景_森林", "path": "场景/场景_森林/", "type": "scene", "status": "待制作", "priority": "P1"},
+        {"id": "场景_BOSS房", "path": "场景/场景_BOSS房/", "type": "scene", "status": "待制作", "priority": "P1"}
+      ]
+    },
+    "武器": {
+      "count": 2,
+      "items": [
+        {"id": "武器_基础弓", "path": "武器/Weapon_Bow_Basic.fbx", "type": "weapon", "status": "待制作", "priority": "P0"},
+        {"id": "武器_铁弓", "path": "武器/Weapon_Bow_Iron.fbx", "type": "weapon", "status": "待制作", "priority": "P1"}
+      ]
+    },
+    "UI": {
+      "count": 6,
+      "items": [
+        {"id": "HUD", "path": "UI/HUD/", "type": "ui_sprites", "file_count": 8, "status": "待切图", "priority": "P0"},
+        {"id": "技能", "path": "UI/技能/", "type": "ui_sprites", "file_count": 6, "status": "待切图", "priority": "P0"},
+        {"id": "升级面板", "path": "UI/升级面板/", "type": "ui_sprites", "file_count": 7, "status": "待切图", "priority": "P0"},
+        {"id": "结算面板", "path": "UI/结算面板/", "type": "ui_sprites", "file_count": 5, "status": "待切图", "priority": "P0"},
+        {"id": "按钮", "path": "UI/按钮/", "type": "ui_sprites", "file_count": 6, "status": "待切图", "priority": "P0"},
+        {"id": "通用", "path": "UI/通用/", "type": "ui_sprites", "file_count": 6, "status": "待切图", "priority": "P1"}
+      ]
+    },
+    "特效": {
+      "count": 9,
+      "items": [
+        {"id": "VFX_Arrow_Trail", "path": "特效/VFX_Arrow_Trail/", "type": "vfx", "status": "待制作", "priority": "P0"},
+        {"id": "VFX_MultiShot", "path": "特效/VFX_MultiShot/", "type": "vfx", "status": "待制作", "priority": "P0"},
+        {"id": "VFX_PierceShot", "path": "特效/VFX_PierceShot/", "type": "vfx", "status": "待制作", "priority": "P0"},
+        {"id": "VFX_Hit_Spark", "path": "特效/VFX_Hit_Spark/", "type": "vfx", "status": "待制作", "priority": "P0"},
+        {"id": "VFX_BattleShout", "path": "特效/VFX_BattleShout/", "type": "vfx", "status": "待制作", "priority": "P1"},
+        {"id": "VFX_Death_Dissolve", "path": "特效/VFX_Death_Dissolve/", "type": "vfx", "status": "待制作", "priority": "P1"},
+        {"id": "VFX_LevelUp", "path": "特效/VFX_LevelUp/", "type": "vfx", "status": "待制作", "priority": "P2"},
+        {"id": "VFX_Gold_Pickup", "path": "特效/VFX_Gold_Pickup/", "type": "vfx", "status": "待制作", "priority": "P1"},
+        {"id": "VFX_Boss_Rage", "path": "特效/VFX_Boss_Rage/", "type": "vfx", "status": "待制作", "priority": "P1"}
+      ]
+    },
+    "音效": {
+      "count": 2,
+      "items": [
+        {"id": "BGM", "path": "音效/BGM/", "type": "audio", "file_count": 5, "status": "待制作", "priority": "P0"},
+        {"id": "SFX", "path": "音效/SFX/", "type": "audio", "file_count": 22, "status": "待制作", "priority": "P0"}
+      ]
+    }
+  },
+
+  "total_summary": {
+    "3d_models": 13,
+    "textures": 14,
+    "ui_sprites": 38,
+    "vfx": 9,
+    "audio": 27,
+    "grand_total": 101
+  },
+
+  "priority_guide": {
+    "P0": "必须有，阻塞开发",
+    "P1": "重要，影响体验",
+    "P2": "可选，锦上添花"
+  },
+
+  "human_workflow": {
+    "step1": "使用美术工具生成资源",
+    "step2": "按命名规范重命名",
+    "step3": "放入对应目录",
+    "step4": "更新此文件中对应资源的status为'已完成'",
+    "step5": "git add + commit + push",
+    "note": "Claude下次读取时会自动检测新资源"
+  }
+}
